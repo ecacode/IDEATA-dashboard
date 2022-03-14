@@ -1,7 +1,7 @@
 import {Navigations_side} from "./navigation/navigations.side";
 import {Navigations} from "./navigation/navigations";
 import * as Color from "./color";
-import * as Loading from './loading';
+import * as Loading from './loading/loading_page';
 import {Button_top_nav} from "./button/button.top.nav";
 import Dropdowns from "./dropdown/dropdowns";
 

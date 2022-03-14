@@ -38,7 +38,7 @@ export const Navigations_side = (props:Props) => {
             key={idx}
             onClick={()=>setActive(item.path)}
           >
-            <i className={item.icon} />
+            <i className={item.icon} style={{fontSize:"15pt"}} />
             {item.name}
           </Link_Nav>
         ))

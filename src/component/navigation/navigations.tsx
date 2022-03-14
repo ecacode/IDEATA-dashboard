@@ -76,8 +76,8 @@ const Container = styled.div `
       align-items:center;
 
       .img-profile img{
-        width:48px;
-        height:48px;
+        width:37px;
+        height:37px;
         object-fit:cover;
         margin-left:10px ;
         border-radius:100px;

@@ -45,7 +45,7 @@ export const Navigations_top = () => {
             onClick={()=>setActive(item.path)}
             active={active === item.path ? true:false}
             >
-              <i className={item.icon} />
+              <i className={item.icon}/>
               {item.name}
           </Button_top_nav>
         ))
