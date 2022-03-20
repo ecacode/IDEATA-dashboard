@@ -3,6 +3,7 @@ import styled from "styled-components";
 import * as  color from "../color";
 import * as assets from "../../assets";
 import {Navigations_top} from "./navigations.top";
+import {Navigations_side} from "./navigations.side";
 import {Dropdowns} from ".."
 
 interface Props{
@@ -30,6 +31,11 @@ export const Navigations = (props:Props) => {
 
   return (
     <Container>
+       
+     <section className="row_0">
+        <Navigations_side />
+      </section>
+      
       <section className="row_1">
         <div className="left">
           <img src={assets.Logo} alt="" />
@@ -60,6 +66,12 @@ export const Navigations = (props:Props) => {
 
 const Container = styled.div `
 
+.row_0{
+  position: fixed;
+  left:0;
+  top:80px;
+  z-index:99999999999;
+}
 
 .row_2{
   margin-left:156px ;
@@ -86,8 +98,16 @@ const Container = styled.div `
     }
   }
 };
-
+z-index: 999;
+position: fixed;
+width: 100%;
 background-color:${color.C_F13929};
 color: ${color.C_FFFFFF};
-padding:10px 10px 0px 10px;
+padding:0px 10px;
+padding-top:10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* height:80px; */
+/* overflow:hidden; */
 `

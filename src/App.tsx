@@ -9,7 +9,8 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/dashboard/*" element={<Routers.Routes_dashboard />} />
-        <Route path="/auth" element={<View.Login />} />
+        {/* <Route path="/auth" element={<View.Login />} /> */}
+        <Route path="/*" element={<Navigate to="/dashboard/home" />} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,32 +1,33 @@
-import React, {useState,Suspense,lazy} from 'react'
+import React, {Suspense,lazy} from 'react'
 import {Routes, Route,Navigate} from "react-router-dom"
 // import * as View from "../views";
 import * as Component from "../component";
 import styled from "styled-components"
 
-const Projects = lazy(()=>import("../views/projects/projects"))
-const Projects_new = lazy(()=>import("../views/projects/projects.new"))
+const Homes = lazy(()=>import("../views/home/home"));
+const Gallery = lazy(()=>import("../views/gallery/gallery"));
+const ReportBuilder = lazy(()=>import("../views/reportBuilder/reportBuilder"));
+const ReportBuilderBuilder = lazy(()=>import("../views/reportBuilder/reportBuilder.builder"));
 
 export const Routes_dashboard = () => {
-  const [show_side, setShow_side] = useState<boolean>(true)
 
   return (
-    <section>
-      <section>
+    <section >
+      <section >
         <Component.Navigations  />
       </section>
-      <NavSide className='nav_side'>
-        <Component.Navigations_side />
-      </NavSide>
 
       <StyledRouter id="router">
-        <Suspense fallback={<Component.Loading.Loading_page />}>
+        <Suspense fallback={<Component.Loading_page />}>
           <Routes>
-            <Route path="projects" element={<Projects />} />
-            <Route path="projects/new" element={<Projects_new />} />
+            <Route path="/" element={<Homes />} />
+            <Route path="home" element={<Homes />} />
+            <Route path="gallery" element={<Gallery />} />
+            <Route path="report_builder" element={<ReportBuilder />} />
+            <Route path="report_builder/builder" element={<ReportBuilderBuilder />} />
             {/* <Route
                 path="*"
-                element={<Navigate to="projects" />}
+                element={<Navigate to="/dashboard/home" />}
             /> */}
           </Routes>
         </Suspense>
@@ -35,13 +36,12 @@ export const Routes_dashboard = () => {
   )
 }
 
-const NavSide = styled.div `
-position:fixed;
-
-
-`
 
 const StyledRouter = styled.section `
+padding-top: 100px;
 transition: 300ms;
-margin-left:94px ;
+margin-left:94px;
+overflow-x:hidden;
+background-color: hsla(228, 45%, 98%, 1);
+min-height: 100vh;
 `
