@@ -42,22 +42,22 @@ const Gallery = () => {
                 [2,2,2,2].map((item:any,idx:number)=>(
                   <tbody key={idx}>
                     <tr>
-                      <td rowSpan={3}>spanrow</td>
-                      <td>aaaa</td>
-                      <td>aaaa</td>
-                      <td>aaaa</td>
+                      <td rowSpan={3}> Lorem ipsum</td>
+                      <td>Lorem ipsum dolor sit amet</td>
+                      <td>Daily</td>
+                      <td>Lorem ipsum dolor sit amet</td>
                       <td><i className="icon-ellipsis-vert" /></td>
                     </tr>
                     <tr>
-                      <td>aaaa</td>
-                      <td>aaaa</td>
-                      <td>aaaa</td>
+                      <td>Lorem ipsum dolor sit amet</td>
+                      <td>Daily</td>
+                      <td>Lorem ipsum dolor sit amet</td>
                       <td><i className="icon-ellipsis-vert" /></td>
                     </tr>
                     <tr>
-                      <td>aaaa</td>
-                      <td>aaaa</td>
-                      <td>aaaa</td>
+                      <td>Lorem ipsum dolor sit amet</td>
+                      <td>Daily</td>
+                      <td>Lorem ipsum dolor sit amet</td>
                       <td><i className="icon-ellipsis-vert" /></td>
                     </tr>
                   </tbody>

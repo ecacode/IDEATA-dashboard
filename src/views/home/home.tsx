@@ -11,7 +11,7 @@ const header = ["Client", "File Name", "Last Opened", "Account"]
     <ContainerHomes>
       <section className="wrap-template-theme">
         <div className="title">
-          Last Template
+          Template Themes
         </div>
         <div className="list-template">
           {
@@ -37,20 +37,20 @@ const header = ["Client", "File Name", "Last Opened", "Account"]
               [2,2,2,2].map((item:any,idx:number)=>(
                 <tbody key={idx}>
                   <tr>
-                    <td rowSpan={3}>spanrow</td>
-                    <td><img src={Powerpoint} /> aaaa</td>
-                    <td>aaaa</td>
-                    <td>aaaa</td>
+                    <td rowSpan={3}> Lorem ipsum</td>
+                    <td><img src={Powerpoint} />  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                   </tr>
                   <tr>
-                    <td><img src={Powerpoint} /> aaaa</td>
-                    <td>aaaa</td>
-                    <td>aaaa</td>
+                    <td><img src={Powerpoint} />  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                   </tr>
                   <tr>
-                    <td><img src={Powerpoint} /> aaaa</td>
-                    <td>aaaa</td>
-                    <td>aaaa</td>
+                    <td><img src={Powerpoint} />  Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
+                    <td> Lorem ipsum</td>
                   </tr>
                 </tbody>
               ))
